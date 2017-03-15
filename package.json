@@ -1,5 +1,5 @@
 {
-  "name": "webpack-keep-hashed-vendor-plugin",
+  "name": "webpack-force-vendor-hash-plugin",
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
