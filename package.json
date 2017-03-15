@@ -1,0 +1,28 @@
+{
+  "name": "webpack-changed-vendor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example": "webpack --config example/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zackify/webpack-changed-vendor-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "hash",
+    "vendor",
+    "split"
+  ],
+  "author": "Zach Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackify/webpack-changed-vendor-plugin/issues"
+  },
+  "homepage": "https://github.com/zackify/webpack-changed-vendor-plugin#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
