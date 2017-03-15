@@ -1,5 +1,5 @@
 {
-  "name": "webpack-force-vendor-hash-plugin",
+  "name": "webpack-force-hash-plugin",
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zackify/webpack-changed-vendor-plugin.git"
+    "url": "git+ssh://git@github.com/zackify/webpack-force-hash-plugin.git"
   },
   "keywords": [
     "webpack",
@@ -19,9 +19,9 @@
   "author": "Zach Silveira",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zackify/webpack-changed-vendor-plugin/issues"
+    "url": "https://github.com/zackify/webpack-force-hash-plugin/issues"
   },
-  "homepage": "https://github.com/zackify/webpack-changed-vendor-plugin#readme",
+  "homepage": "https://github.com/zackify/webpack-force-hash-plugin#readme",
   "devDependencies": {
     "webpack": "^2.2.1"
   }

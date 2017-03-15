@@ -1,4 +1,4 @@
-## webpack-force-vendor-hash-plugin
+## webpack-force-hash-plugin
 
 If you use an env variable in your webpack output:
 
@@ -23,10 +23,10 @@ npm install webpack-force-vendor-hash-plugin
 ## Usage
 
 ```js
-const KeepHashedVendorPlugin = require('webpack-force-vendor-hash-plugin');
+const ForceHashPlugin = require('webpack-force-hash-plugin');
 
 plugins: [
-  new KeepHashedVendorPlugin({ name: 'vendor' }),
+  new ForceHashPlugin({ name: 'vendor' }), // name of the entry point
   new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
   }),
