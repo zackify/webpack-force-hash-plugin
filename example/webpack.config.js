@@ -1,12 +1,14 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
-const ChangedVendorPlugin = require('../src');
+const KeepHashedVendorPlugin = require('../src');
+
+const FakeEnvVar = 'commit_hashs';
 
 module.exports = {
   context: resolve(__dirname),
 
   plugins: [
-    new ChangedVendorPlugin(),
+    new KeepHashedVendorPlugin({ name: 'vendor' }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
     }),
@@ -21,7 +23,7 @@ module.exports = {
   },
   output: {
     path: 'dist/',
-    filename: `[hash].[name].js`,
+    filename: `${FakeEnvVar}.[hash].[name].js`,
     chunkFilename: `[hash].[id].chunk.js`,
     publicPath: '/',
   },
